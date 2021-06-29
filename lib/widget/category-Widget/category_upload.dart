@@ -62,8 +62,9 @@ class _CategoryUploadImageState extends State<CategoryCreateWidget> {
                           height: 30,
                           child: TextFormField(
                             textAlign: TextAlign.center,
+                            controller: categoryNameTextController,
                             validator: (String value) {
-                              categoryNameTextController.text = value;
+                              // categoryNameTextController.text = value;
                               if (value.isEmpty) {
                                 return 'Please Enter  Product name';
                               }
@@ -87,8 +88,9 @@ class _CategoryUploadImageState extends State<CategoryCreateWidget> {
                             child: TextFormField(
                               keyboardType: TextInputType.number,
                               textAlign: TextAlign.center,
+                              controller: categoryPriceTextController,
                               validator: (String value) {
-                                categoryPriceTextController.text = value;
+                                // categoryPriceTextController.text = value;
                                 if (value.isEmpty) {
                                   return 'Please product price';
                                 }
@@ -109,8 +111,9 @@ class _CategoryUploadImageState extends State<CategoryCreateWidget> {
                             child: TextFormField(
                               keyboardType: TextInputType.number,
                               textAlign: TextAlign.center,
+                              controller: categoryComPriceTextController,
                               validator: (String value) {
-                                categoryComPriceTextController.text = value;
+                                //categoryComPriceTextController.text = value;
                                 if (value.isEmpty) {
                                   return 'Please enter compared price';
                                 }
@@ -130,8 +133,9 @@ class _CategoryUploadImageState extends State<CategoryCreateWidget> {
                           height: 30,
                           child: TextFormField(
                             textAlign: TextAlign.center,
+                            controller: categoryDiscriptionTextController,
                             validator: (String value) {
-                              categoryDiscriptionTextController.text = value;
+                              // categoryDiscriptionTextController.text = value;
                               if (value.isEmpty) {
                                 return 'Please enter description of product';
                               }
@@ -201,11 +205,12 @@ class _CategoryUploadImageState extends State<CategoryCreateWidget> {
                                     message: 'Cannot be saved ',
                                     context: context);
                               }
+
+                              categoryNameTextController.clear();
+                              categoryPriceTextController.clear();
+                              categoryComPriceTextController.clear();
+                              categoryDiscriptionTextController.clear();
                             }
-                            categoryNameTextController.clear();
-                            categoryPriceTextController.clear();
-                            categoryComPriceTextController.clear();
-                            categoryDiscriptionTextController.clear();
                           },
                           child: Text(
                             'Save image',
