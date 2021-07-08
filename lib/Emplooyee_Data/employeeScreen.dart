@@ -7,7 +7,7 @@ import 'package:foodyweb/MyDining/MydiningOrder.dart';
 import 'package:foodyweb/sidebar.dart';
 
 class EmployeesScreen extends StatelessWidget {
-  static const String id = 'SettingsScreen';
+  static const String id = 'EmployeeScreen';
   @override
   Widget build(BuildContext context) {
     SideBarWidget _sidebar = SideBarWidget();
