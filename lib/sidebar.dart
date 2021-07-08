@@ -24,11 +24,7 @@ class SideBarWidget {
             route: Deshboard.id,
             icon: Icons.dashboard,
           ),
-          MenuItem(
-            title: 'Exit',
-            route: Login.id,
-            icon: Icons.exit_to_app,
-          ),
+
           MenuItem(
             title: 'Category',
             route: CategoryScreen.id,
@@ -53,6 +49,11 @@ class SideBarWidget {
             title: 'Employees',
             route: EmployeesScreen.id,
             icon: Icons.person_rounded,
+          ),
+          MenuItem(
+            title: 'Exit',
+            route: Login.id,
+            icon: Icons.exit_to_app,
           ),
           // MenuItem(
           //   title: 'Dining Orders',

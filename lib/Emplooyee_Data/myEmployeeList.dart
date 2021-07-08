@@ -7,7 +7,7 @@ import 'package:foodyweb/Emplooyee_Data/employeeProvider.dart';
 import 'package:provider/provider.dart';
 
 class MyEmployeeList extends StatefulWidget {
-  static const String id = 'Orders';
+  static const String id = 'Employee';
   @override
   _MyEmployeeListState createState() => _MyEmployeeListState();
 }
@@ -65,8 +65,8 @@ class _MyEmployeeListState extends State<MyEmployeeList> {
                 //TODO no order screen
                 return Center(
                   child: Text(tag > 0
-                      ? 'No ${options[tag]} orders'
-                      : 'No Orders. Continue Shopping'),
+                      ? 'No ${options[tag]} Employee'
+                      : 'No Employee. Continue adding'),
                 );
               }
 
