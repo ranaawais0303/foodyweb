@@ -142,7 +142,7 @@ class _MyEmployeeListState extends State<MyEmployeeList> {
                                     fontSize: 10, color: Colors.black),
                               ),
                               subtitle: Text(
-                                'View o details',
+                                'View details',
                                 style:
                                     TextStyle(fontSize: 12, color: Colors.grey),
                               ),
