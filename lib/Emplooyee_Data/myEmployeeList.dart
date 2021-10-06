@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 
 class MyEmployeeList extends StatefulWidget {
   static const String id = 'Employee';
+
   @override
   _MyEmployeeListState createState() => _MyEmployeeListState();
 }
@@ -18,6 +19,7 @@ class _MyEmployeeListState extends State<MyEmployeeList> {
   double attend;
   ScrollController _controller;
   EmployeeService _employeeService = EmployeeService();
+
   // MyDiningServices _myDiningServices = MyDiningServices();
 //  User user = FirebaseAuth.instance.currentUser;
   int tag = 1;
@@ -29,6 +31,7 @@ class _MyEmployeeListState extends State<MyEmployeeList> {
     'On the way',
     'Delivered',
   ];
+
   @override
   void initState() {
     _controller = ScrollController();
@@ -110,6 +113,24 @@ class _MyEmployeeListState extends State<MyEmployeeList> {
                                             : Colors.orangeAccent,
                                     fontWeight: FontWeight.bold),
                               ),
+                              // subtitle: CircleAvatar(
+                              //   child: IconButton(
+                              //     onPressed: () {
+                              //       _employeeService
+                              //           .ConfirmEmployeeDeleteDialog(
+                              //               title: '${document['EmpName']}',
+                              //               message:
+                              //                   'do u want to delete the info ',
+                              //               context: context,
+                              //               id: document.id);
+                              //     },
+                              //     icon: Icon(
+                              //       Icons.delete,
+                              //       color: Colors.red,
+                              //     ),
+                              //   ),
+                              // ),
+
                               // subtitle: Text(
                               //   'On ${DateFormat.yMMMd().format(
                               //     DateTime.parse(document.data()['timestamp']),
